@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Candidato a Emprego</h1>
+        <h3>Dados Pessoais</h3>
+    
+        <form id="cadastroForm" action="#" method="get">
+            
+            <label for="nomeCompleto">Nome Completo: </label>
+            <input name="nomeCompleto" type="text"> 
+
+            <label for="cpf">CPF: </label>
+            <input name="cpf" type="text"placeholder="123.456.789-10">
+            <br>
+
+            <label for="dataNasc">Data de Nascimento: </label>
+            <input name="dataNasc" type="date">
+
+            <label for="email">E-mail: </label>
+            <input name="email"type="email">
+            <br>
+
+            <label for="telefone">Telefone: </label>
+            <input name="telefone" type="tel">
+
+            <label for="cel">Celular: </label>
+            <input name="cel" type="tel" placeholder="(99)99999-9999">
+
+            <br>
+            <label for="Sexo">Sexo: </label>
+            <select name="Sexo">
+                <option value="Masculio">Masculio</option>
+                <option value="Feminino">Feminino</option>
+                <option value="outros">outros</option>
+                <option value="Prefiro nao dizer">Prefiro nao dizer</option> 
+            </select><br>
+
+            <label for="estCivil">Est.Civil: </label>
+            <select name="estCivil">
+                <option value="Solo">Solteiro</option>
+                <option value="Duo">Casado</option>
+                <option value="Kill">Viúvo</option>
+                <option value="Solo Again">Divorciado</option> 
+            </select> <br>
+
+            <h3>Formação Academica</h3>
+
+            <label for="escola">Escolaridade:</label>
+            <select name="escola">
+                <option value="ensinoMI">Cursando Ensino Médio</option>
+                <option value="ensinoMC">Ensino Médio Completo</option>
+                <option value="ensinoCM">Ensino Médio Incompleto</option>
+                <option value="ensinoS">Ensino Superior Completo</option>
+                <option value="">Ensino Superior Incompleto</option>
+                <option value="">Pós-Graduação Completo</option>
+                <option value="">Pós-Graduação Incompleto</option>
+            </select>
+            <br>
+
+            <label for="cursos">Cursos:</label>
+            <input name="cursos" type="text">
+            <select name="cursos">
+                <option value="cursando">Cursando</option>
+                <option value="completo">Completo</option>
+                <option value="incompleto">Incompleto</option>
+            </select>
+
+            <label for="tempoForm">Tempo de Formação:</label>
+            <input name="tempoForm" type="number">
+            <input name="tempoForm" type="text" placeholder="Anos,Meses..." > 
+            <br>
+
+            <label for="TempExp">Tempo de Experiência:</label>
+            <input name="TempExp" type="text">
+
+            <label for="localExp">Local de Experiência:</label>
+            <input name="localExp" type="text">
+
+            <h3>Dados Profissionais</h3>
+
+            <label for="funcao">Função:</label>
+            <select name="funcao">
+                <option value="Diret">Diretoria</option>
+                <option value="geren">Gerência</option>
+                <option value="Auxiliar">Auxiliar</option>
+                <option value="Analista">Analista</option>
+                <option value="estag">Estagiaria</option>
+                <option value="assist">Assistente</option>
+            </select>
+
+            <label for="setor">Setor:</label>
+            <select name="setor">
+                <option value="Adm">Administrativo</option>
+                <option value="comerc">Comercial</option>
+                <option value="financ">Financeiro</option>
+            </select>
+            <br>
+
+            <label for="reporteS">Reporte Superior:</label>
+            <input name="reporteS" type="text">
+
+            <label for="subord">Subordinados:</label>
+            <input name="subord" type="text">
+            <br>
+
+            <label for="trabalhoSemanal">Jornada de Trabalho Semanal</label>
+            <select name="trabalhoSemanal">
+                <option value="20h">20h</option>
+                <option value="30h">30h</option>
+                <option value="40h">40h</option>
+                <option value="44h">44h</option>
+            </select> <br>
+
+           <h4>Horário de Trabalho:</h4>
+           <label for="entrada">Entrada:</label>
+           <input name="entrada" type="time">
+           <label for="saida">Saída:</label>
+           <input type="time" name="saida">
+
+           <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+   <script src="script.js"></script>
+   
+</body>
+</html>
